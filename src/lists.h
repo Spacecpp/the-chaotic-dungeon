@@ -1,6 +1,8 @@
 #ifndef LISTS_H
 #define LISTS_H
 
+#define ITCH_BUILD 1
+
 #define ALLOW_DEBUG 1
 
 #define TW 32 // tile width

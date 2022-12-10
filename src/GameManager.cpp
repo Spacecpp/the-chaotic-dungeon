@@ -28,10 +28,12 @@ GameManager::GameManager(): levelUpMenuPosition(0), levelUpMenuCursorPosition(0)
 void GameManager::UpdateDrawFrame()
 {
 	
+	#ifndef ITCH_BUILD
 	// Screen scale logic (x2)
     if (IsKeyPressed(KEY_F1) ) screenScale = 1;
     else if (IsKeyPressed(KEY_F2) ) screenScale = 2;
     else if (IsKeyPressed(KEY_F3) ) screenScale = 3;
+	#endif
     
     if (screenScale != prevScreenScale)
     {

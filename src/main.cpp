@@ -280,6 +280,9 @@ int main(void)
 	
 	//gameManager.start_game();
 	
+	#ifdef ITCH_BUILD
+	screenScale = 2;
+	#endif
 
 	#if defined(PLATFORM_WEB)
 		emscripten_set_main_loop(UpdateDrawFrame, 60, 1);

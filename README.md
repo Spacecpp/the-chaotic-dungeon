@@ -21,26 +21,38 @@ _Copyright (c) 2022 Ramon Santamaria ([@raysan5](https://twitter.com/raysan5))_
 
 -----------------------------------
 
-## $(Game Title)
+## The Chaotic Dungeon
 
-![$(Game Title)](screenshots/screenshot000.png "$(Game Title)")
+![$(The Chaotic Dungeon)](screenshots/screenshot000.png "$(The Chaotic Dungeon)")
 
 ### Description
 
-$(Your Game Description)
+This game is a roguelite dungeon crawler with zelda-style gameplay. Fight your way through the dungeon defeating enemies and collecting items. Level up your character to become stronger and take the following floors with ease.
+If you die you have to start over, but you keep your attributes.
+Can you reach the floor 30, slay the guardian and come back to the surface alive?
+
 
 ### Features
 
- - $(Game Feature 01)
- - $(Game Feature 02)
- - $(Game Feature 03)
+ - Fight in a large dungeon with incresing difficult
+ - Level up your character and make it stronger
+ - Randomly generated maps
+ - Use melee, ranged, and magic weapons
+ - Some easter eggs / references to other games
 
 ### Controls
 
 Keyboard:
- - $(Game Control 01)
- - $(Game Control 02)
- - $(Game Control 03)
+
+Arrow keys - Move
+
+Z - Attack / use item
+
+X - Swap selected item for the item on the floor
+
+Space - Climb stairs
+
+1 - 6 - Select item)
 
 ### Screenshots
 
@@ -48,14 +60,12 @@ _TODO: Show your game to the world, animated GIFs recommended!._
 
 ### Developers
 
- - $(Developer 01) - $(Role/Tasks Developed)
- - $(Developer 02) - $(Role/Tasks Developed)
- - $(Developer 03) - $(Role/Tasks Developed)
+ - Space.cpp
 
 ### Links
 
  - YouTube Gameplay: $(YouTube Link)
- - itch.io Release: $(itch.io Game Page)
+ - itch.io Release: https://spacecpp.itch.io/the-chaotic-dungeon
  - Steam Release: $(Steam Game Page)
 
 ### License

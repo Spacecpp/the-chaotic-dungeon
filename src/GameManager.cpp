@@ -270,7 +270,7 @@ void GameManager::read_inputs()
 				if (levelUpMenuPosition <= 0)
 				{
 					
-					if (IsKeyPressed(KEY_UP) )
+					if (IsKeyPressed(KEY_UP) || IsKeyPressed(KEY_W) )
 					{
 						
 						if (levelUpMenuCursorPosition > 0)
@@ -281,7 +281,7 @@ void GameManager::read_inputs()
 						
 					}
 					
-					if (IsKeyPressed(KEY_DOWN) )
+					if (IsKeyPressed(KEY_DOWN) || IsKeyPressed(KEY_S) )
 					{
 						
 						if (levelUpMenuCursorPosition < 3)
@@ -292,7 +292,7 @@ void GameManager::read_inputs()
 						
 					}
 					
-					if (IsKeyPressed(KEY_Z) )
+					if (IsKeyPressed(KEY_Z) || IsKeyPressed(KEY_O) )
 					{
 						
 						if (player.increase_attribute(levelUpMenuCursorPosition) )
@@ -309,13 +309,13 @@ void GameManager::read_inputs()
 			else
 			{
 				
-				if (IsKeyDown(KEY_UP) ) player.inputUp = true;
-				if (IsKeyDown(KEY_DOWN) ) player.inputDown = true;
-				if (IsKeyDown(KEY_LEFT) ) player.inputLeft = true;
-				if (IsKeyDown(KEY_RIGHT) ) player.inputRight = true;
+				if (IsKeyDown(KEY_UP) || IsKeyDown(KEY_W) ) player.inputUp = true;
+				if (IsKeyDown(KEY_DOWN) || IsKeyDown(KEY_S) ) player.inputDown = true;
+				if (IsKeyDown(KEY_LEFT) || IsKeyDown(KEY_A) ) player.inputLeft = true;
+				if (IsKeyDown(KEY_RIGHT) || IsKeyDown(KEY_D) ) player.inputRight = true;
 				
-				if (IsKeyPressed(KEY_Z) ) player.inputAttack = true;
-				if (IsKeyPressed(KEY_X) ) player.inputSecondary = true;
+				if (IsKeyPressed(KEY_Z) || IsKeyPressed(KEY_O) ) player.inputAttack = true;
+				if (IsKeyPressed(KEY_X) || IsKeyPressed(KEY_P) ) player.inputSecondary = true;
 				if (IsKeyPressed(KEY_SPACE) ) player.inputClimb = true;
 				
 				// selecao de item

@@ -264,7 +264,12 @@ int main(void)
 		SetTraceLogLevel(LOG_NONE); // Disable raylib trace log messsages
 	#endif
 	
-    InitWindow(screenWidth, screenHeight, "The Chaotic Dungeon");
+	#ifdef ITCH_BUILD
+	screenScale = 2;
+	prevScreenScale = screenScale;
+	#endif
+	
+    InitWindow(screenWidth * screenScale, screenHeight * screenScale, "The Chaotic Dungeon");
 	InitAudioDevice(); 
     
     if (!load_data() )
@@ -278,12 +283,7 @@ int main(void)
     target = LoadRenderTexture(screenWidth, screenHeight);
     //SetTextureFilter(target.texture, TEXTURE_FILTER_BILINEAR);
 	
-	//gameManager.start_game();
 	
-	#ifdef ITCH_BUILD
-	screenScale = 2;
-	#endif
-
 	#if defined(PLATFORM_WEB)
 		emscripten_set_main_loop(UpdateDrawFrame, 60, 1);
 	#else

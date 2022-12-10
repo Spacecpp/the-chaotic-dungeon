@@ -44,11 +44,11 @@ Can you reach the floor 30, slay the guardian and come back to the surface alive
 
 Keyboard:
 
-Arrow keys - Move
+Arrow keys or WSAD - Move
 
-Z - Attack / use item
+Z or O - Attack / use item
 
-X - Swap selected item for the item on the floor
+X or P - Swap selected item for the item on the floor
 
 Space - Climb stairs
 

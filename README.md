@@ -64,7 +64,7 @@ _TODO: Show your game to the world, animated GIFs recommended!._
 
 ### Links
 
- - YouTube Gameplay: $(YouTube Link)
+ - YouTube Gameplay: https://www.youtube.com/watch?v=_ejwCprKsKE
  - itch.io Release: https://spacecpp.itch.io/the-chaotic-dungeon
  - Steam Release: $(Steam Game Page)
 
